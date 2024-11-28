@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Study Tricks</title>
+    <link rel="stylesheet" href="tips.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- Swiper CSS -->
+</head>
+<body>
+    <div class="nav">
+        <a class="nav-item" href="index.html">HOME</a>
+        <a class="nav-item" href="pomodoro.html">POMODORO</a>
+        <a class="nav-item" href="reservation.html">STUDY TRICKS</a>
+      </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Esmerlyn  -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="image-content">
+                        <img src="Esmerlyn.jpeg" alt="" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Esmerlyn Garabito</h2>
+                        <p class="description">Besides the labs, do extra exercises to improve your skills!
+                            I used the Swedish College Python course and did approximately
+                            10 exercises per day. This extra practice helps me remember
+                            things better. Then I did Python labs more quickly.</p>
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 Chhoma  Gurung -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="image-content">
+                        <img src="Chhoma.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Chhoma Gurung</h2>
+                        <p class="description">Stay organized by 
+                            using a planner to keep track of deadlines. 
+                            Manage your time by breaking big tasks into smaller
+                             steps and starting early to avoid last-minute stress.
+                              If you get stuck, do not hesitate to ask for help from
+                               instructors or classmates. Stay positive when challenges 
+                               arise—take breaks, celebrate small wins, and keep pushing forward.</p>
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 Yousef Kharma-->
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="image-content">
+                        <img src="Yusuf.jpeg" alt="" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Yousef Kharma</h2>
+                        <p class="description">Before diving into projects or labs, 
+                            take time to read and understand the material.
+                             This approach helps to build a strong foundation and ensures that you can tackle
+                              challenges confidently.</p>
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 Mahir Azam -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="image-content">
+                        <img src="Mahir.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Mahir Azam </h2>
+                        <p class="description">If you're looking to succeed, I recommend setting aside time to study,
+                             like I do on Sundays. I usually spend 8-10 hours preparing for the upcoming week's labs 
+                             and projects. I make sure to read and complete all assignments because learning ahead of
+                              time can really make a difference.</p>
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+    <script>
+        // Swiper configuration
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

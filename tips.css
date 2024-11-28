@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 15px; /* Spacing between items */
+    position: absolute; /* Allow positioning */
+    top: 20px; /* Distance from the top of the page */
+    left: 20px; /* Distance from the left of the page */
+}
+
+.nav-item {
+    color: rgb(82, 33, 196) ;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0; /* No extra margins */
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.swiper-container {
+    max-width: 1280px; 
+    width: 90%;
+    background-color: rgb(238, 101, 9);
+    padding: 60px 0; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+    border-radius: 25px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+.card {
+    width: 720px; 
+    border-radius: 30px;
+    background-color: #fff;
+    transition: transform 0.3s ease; 
+    will-change: transform; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px; 
+}
+
+.image-content {
+    position: relative;
+    row-gap: 12px;
+    padding: 42px 0; 
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.card-image {
+    position: relative;
+    height: 300px; 
+    width: 300px; 
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px; 
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 8px solid rgb(82, 33, 196);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(82, 33, 196);
+    border-radius: 30px 30px 0 30px; 
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px; 
+    height: 50px; 
+    width: 50px; 
+    background-color: rgb(82, 33, 196);
+}
+
+.overlay::after {
+    border-radius: 0 30px 0 0;
+    background-color: #fff;
+}
+
+.name {
+    font-size: 28px; 
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 18px; /* Increased font size */
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 20px; /* Increased button font size */
+    color: #fff;
+    padding: 12px 24px; /* Larger padding for button */
+    background-color: rgb(82, 33, 196);
+    border-radius: 10px; /* Adjusted border radius */
+    margin: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: rgb(238, 101, 9);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    background-color: rgba(82, 33, 196, 0.7);
+    border-radius: 50%;
+    padding: 18px; /* Larger swipe buttons */
+    transition: 0.3s ease;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.swiper-button-next {
+    right: 20px; /* Adjusted position closer to edge */
+}
+
+.swiper-button-prev {
+    left: 20px; /* Adjusted position closer to edge */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgb(238, 101, 9);
+}
+
+.swiper-pagination-bullet {
+    background: rgb(82, 33, 196);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(214, 110, 20);
+}
